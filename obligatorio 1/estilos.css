@@ -1,0 +1,396 @@
+:root {
+    --violeta: #805E73;
+    --amarillo: #FFF689;
+}
+
+* {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background-color: var(--violeta);
+}
+
+header nav {
+    display: none;
+}
+
+header img {
+    width: 40px;
+}
+
+header {
+    background-color: var(--violeta);
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+#hero {
+    background-color: var(--violeta);
+    padding: 90px 0 90px 0;
+    text-align: center;
+    border-top: var(--amarillo) 3px solid;
+    color: #fff;
+    border-bottom: var(--amarillo) 2px solid;
+    box-shadow: 0 10px 5px 0 rgba(0, 0, 0, 0.521);
+}
+
+#hero h1 {
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+#hero p {
+    margin: 15px;
+    font-size: 0.7em;
+}
+
+#hero .botondesc a {
+    background-color: var(--amarillo);
+    border: 2px solid transparent;
+    border-radius: 4px;
+    color: var(--violeta);
+    padding: 10px;
+    font-weight: bold;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+#hero .botondesc a:hover {
+    background-color: var(--violeta);
+    color: var(--amarillo);
+    border: solid 2px var(--amarillo);
+}
+
+#analizar article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: var(--amarillo);
+    padding: 3em;
+    border-radius: 50px;
+    color: var(--violeta);
+}
+
+#analizar {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    padding: 2em;
+}
+
+#analizar img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+#analizar h3 {
+    margin-top: 20px;
+}
+
+#analizar p {
+    margin-top: 10px;
+}
+
+#analizar .obso, #analizar .repar {
+    display: none;
+}
+
+#actuar img {
+    width: 100%;
+    display: block;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+#actuar a {
+    background-color: var(--amarillo);
+    border-radius: 70px;
+    border: 2px solid transparent;
+    color: var(--violeta);
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 4px;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+#actuar a:hover {
+    background-color: var(--violeta);
+    color: var(--amarillo);
+    border: 2px solid var(--amarillo);
+}
+
+#actuar .gridboton {
+    position: relative;
+}
+
+#actuar .gridboton a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: fit-content;
+    width: fit-content;
+    margin: auto;
+}
+
+#actuar {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5px;
+    margin: 2em;
+}
+
+#actuar div {
+    height: 300px;
+    background-color: var(--violeta);
+    align-content: center;
+    text-align: center;
+    color: #FFF;
+    border: 1px solid var(--amarillo);
+    border-radius: 30px;
+    margin-bottom: 0.5em;
+}
+
+.textogrid {
+    display: none;
+}
+
+#rrr {
+    padding: 2em;
+    background-color: var(--violeta);
+    border-bottom: 2px #fff solid;
+}
+
+#rrr img {
+    width: 100%;
+    display: block;
+    height: 300px;
+    object-fit: cover;
+    margin: auto;
+    border-radius: 10px;
+}
+
+#rrr article {
+    position: relative;
+    margin: auto;
+    max-width: 350px;
+    align-content: center;
+    border: var(--amarillo) solid 2px;
+    border-radius: 20px;
+    margin-bottom: 2em;
+    padding: 10px;
+    color: #ffffff;
+}
+
+#rrr article p:first-of-type {
+    position: absolute;
+    top: 15px;
+    right: 0;
+    background-color: #ffffff;
+    color: var(--violeta);
+    padding: 6px 14px;
+    font-weight: bold;
+    font-size: 12px;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+#rrr article h5 {
+    font-size: 18px;
+    margin: 12px 0 6px 0;
+    color: #fff;
+}
+
+#rrr article p {
+    font-size: 14px;
+    color: #fff;
+    margin: 0;
+}
+
+.reciclar {
+    display: none;
+}
+
+#mail {
+    background-color: var(--violeta);
+    color: #ffffff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#mail h2 {
+    font-weight: 300;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+#mail form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+#mail input {
+    width: 100%;
+    padding: 12px 15px;
+    border: none;
+    color: var(--violeta);
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.checkbox {
+    display: flex;
+    align-items: flex-start;
+    gap: 2px;
+    text-align: left;
+    font-size: 12px;
+}
+
+footer {
+    background-color: var(--amarillo);
+    color: var(--violeta);
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+}
+
+@media all and (min-width:768px) {
+    #hamb {
+        display: none;
+    }
+
+    header nav {
+        display: flex;
+        gap: 3em;
+        margin: 0 3em;
+    }
+
+    header img {
+        width: 60px;
+    }
+
+    header nav a {
+        color: var(--amarillo);
+        font-weight: 650;
+    }
+
+    #hero p {
+        font-size: 1em;
+    }
+
+    #hero h1 {
+        font-size: 3em;
+    }
+
+    .botondesc a {
+        font-size: 1.5em;
+    }
+
+    #analizar .obso, #analizar .repar {
+        display: flex;
+    }
+
+    #analizar article {
+        flex-basis: 40%;
+        flex-grow: 1;
+    }
+
+    #analizar {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .textogrid {
+        display: grid;
+    }
+
+    #actuar {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    #actuar .lego {
+        grid-column: span 2;
+    }
+
+    .textogrid {
+        grid-column: span 2;
+        padding: 10em;
+        text-align: left;
+        margin: 0;
+    }
+
+    .textogrid p {
+        margin-top: 2em;
+    }
+
+    #rrr {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    #rrr article {
+        margin: 0;
+    }
+}
+
+@media all and (min-width:1200px) {
+    #analizar article {
+        flex-basis: 20%;
+        padding: 2em;
+    }
+
+    #analizar img {
+        width: 180px;
+        height: 180px;
+    }
+
+    #analizar {
+        padding: 1em;
+        border: 1px solid var(--amarillo);
+        border-radius: 30px;
+        width: 80%;
+        margin: auto;
+        position: relative;
+        bottom: 70px;
+        background-color: var(--violeta);
+    }
+
+    #actuar {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    #actuar .textogrid {
+        grid-column: 3/5;
+        grid-row: 1/-1;
+        height: auto;
+    }
+
+    #rrr .reciclar {
+        display: block;
+    }
+
+    #rrr {
+        margin: auto;
+    }
+}
